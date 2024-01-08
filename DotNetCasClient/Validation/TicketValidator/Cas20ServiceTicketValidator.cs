@@ -129,7 +129,15 @@ namespace DotNetCasClient.Validation.TicketValidator
                 } 
                 else
                 {
-                    return new CasPrincipal(new Assertion(authSuccessResponse.User), proxyGrantingTicketIou);
+                    if (authSuccessResponse.UserFiscalCode != null)
+                    {
+                        return new CasPrincipal(new Assertion(authSuccessResponse.UserFiscalCode), proxyGrantingTicketIou);
+
+                    }
+                    else
+                    {
+                        return new CasPrincipal(new Assertion(authSuccessResponse.User), proxyGrantingTicketIou);
+                    }
                 }
             }
             

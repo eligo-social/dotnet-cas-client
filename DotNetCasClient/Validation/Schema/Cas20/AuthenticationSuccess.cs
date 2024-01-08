@@ -41,6 +41,13 @@ namespace DotNetCasClient.Validation.Schema.Cas20
             set;
         }
 
+        [XmlElement("userFiscalCode")]
+        public string UserFiscalCode
+        {
+            get;
+            set;
+        }
+
         [XmlElement("proxyGrantingTicket")]
         public string ProxyGrantingTicket
         {
