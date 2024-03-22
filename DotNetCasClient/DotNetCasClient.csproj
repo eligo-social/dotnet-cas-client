@@ -7,6 +7,9 @@
     <TargetFrameworks>net45</TargetFrameworks>
     <OldToolsVersion>2.0</OldToolsVersion>
     <ProjectGuid>{883A296E-C898-4D1F-9ED9-DE7569DEFB3D}</ProjectGuid>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>EligoDotNetCasClient</Title>
+    <PackageId>EligoDotNetCasClient</PackageId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
     <DefineConstants>NET45</DefineConstants>
